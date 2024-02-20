@@ -27,7 +27,7 @@ const ModalComponents = (props) => {
         <p>{caption}</p>
       </Modal.Body>
       <Modal.Footer className="d-flex justify-content-center">
-        <Button href={permalink}>Перейти к записи</Button>
+        <Button href={permalink}>Go To Post</Button>
         {/* <Button onClick={props.onHide}>Закрыть</Button> */}
       </Modal.Footer>
     </Modal>

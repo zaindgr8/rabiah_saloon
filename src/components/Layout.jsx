@@ -40,7 +40,7 @@ const Layout = () =>{
                 alt=""
               />
             </Col>
-            {/* <Col className="Top-Header-Content col-5 d-flex justify-content-end align-items-center">
+            <Col className="Top-Header-Content col-5 d-flex justify-content-end align-items-center">
               <CustomLink to="/shop" onClick={() => handleClick()}>
                 GOODS
               </CustomLink>
@@ -50,7 +50,7 @@ const Layout = () =>{
               <CustomLink to="/about" onClick={() => handleClick()}>
                 ABOUT US
               </CustomLink>
-            </Col> */}
+            </Col>
           </Row>
         </Container>
 
@@ -132,7 +132,6 @@ const Layout = () =>{
             </Navbar.Collapse>
           </Container>
         </Navbar>
-
         <main>
           <Outlet />
         </main>

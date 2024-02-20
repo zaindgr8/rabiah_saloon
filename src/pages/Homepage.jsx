@@ -59,10 +59,10 @@ const Homepage = () =>{
       <>
         <Slider />
         <AboutComponent />
-        {/* <ServiceComponent /> */}
-        {/* <Teampage /> */}
+        {/* <ServiceComponent />  */}
+        {/* {/* <Teampage /> */}
 
-        {/* <Container className="mb-20">
+        <Container className="mb-20">
           <Row className="h-10">
             <Col className="Header text-center">
               <h2 className="decorated">
@@ -77,7 +77,7 @@ const Homepage = () =>{
                 <Accordion.Item key={training.id} eventKey={training.id}>
                   <Accordion.Header>{training.title}</Accordion.Header>
                   <Accordion.Body>
-                    <h2>{`${training.price_max} BYN`}</h2>
+                    <h2>{`${training.price_max} AED`}</h2>
                     <p>{`Преподаватель мастер ${getEmployee(
                       training.staff.map((item) => item.id)
                     )}`}</p>
@@ -97,7 +97,7 @@ const Homepage = () =>{
               </Link>
             </Col>
           </Row>
-        </Container> */}
+        </Container>
 
         {/* <SwiperComponent /> */}
 {/* 

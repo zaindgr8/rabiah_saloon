@@ -11,9 +11,7 @@ export const AuthProvider = ({children}) => {
     //const url = `http://localhost:8000`
     const url = `https://back.barstudio.by`
 
-
     // Email
-
     const [mail, setMail] = useState({});
 
     const sendMail = () => {
