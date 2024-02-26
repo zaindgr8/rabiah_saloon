@@ -28,56 +28,76 @@ import Slide11 from '../pages/img/swiper/Slide 11.jpg';
 const SwiperComponent = () =>{
 
     return (
-        <Container className='Swiper mb-20' fluid>
-        <Row className='h-10'>
-            <Col className='News-Header text-center'> 
-            <h2 className="decorated"><span>Бренды, с которыми мы работаем</span></h2> 
-            </Col>
-            
+      <Container className="Swiper mb-20" fluid>
+        <Row className="h-10">
+          <Col className="News-Header text-center">
+            <h2 className="decorated">
+              <span>Brands we work with</span>
+            </h2>
+          </Col>
         </Row>
-        <Row className='Swiper h-100'>
-            <Col>
-                <Swiper
-                    slidesPerView={2}
-                    spaceBetween={20}
-                    freeMode={true}
-                    pagination={{
-                    clickable: true,
-                    }}
-                    autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                    }}
-                    modules={[Autoplay, FreeMode, Pagination]}
-                    className="mySwiper"
-
-                    breakpoints={{
-                        400: {
-                            slidesPerView: 3,
-                        },
-                        768: {
-                          slidesPerView: 5,
-                        },
-                      }}
-
-                >
-                    <SwiperSlide><img src={Slide3} alt="HADAT Cosmetics" /></SwiperSlide>
-                    <SwiperSlide><img src={Slide2} alt="Dr.Sorbie" /></SwiperSlide>
-                    <SwiperSlide><img src={Slide5} alt="K18 BIOMIMETIC HAIRSCIENCE" /></SwiperSlide>
-                    <SwiperSlide><img src={Slide11} alt="Tangle Teezer" /></SwiperSlide>
-                    <SwiperSlide><img src={Slide6} alt="ALFAPARF MILANO" /></SwiperSlide>
-                    <SwiperSlide><img src={Slide4} alt="Provida Organic" /></SwiperSlide>   
-                    <SwiperSlide><img src={Slide7} alt="ZOOM Cosmetics" /></SwiperSlide>
-                    <SwiperSlide><img src={Slide8} alt="LIMBA Cosmetics" /></SwiperSlide>
-                    <SwiperSlide><img src={Slide9} alt="OLLIN Proffesional" /></SwiperSlide>
-                    <SwiperSlide><img src={Slide10} alt="Fanola" /></SwiperSlide>
-                    <SwiperSlide><img src={Slide1} alt="ikko" /></SwiperSlide>
-                    
-                </Swiper>
-            </Col>
+        <Row className="Swiper h-100">
+          <Col>
+            <Swiper
+              slidesPerView={2}
+              spaceBetween={20}
+              freeMode={true}
+              pagination={{
+                clickable: true,
+              }}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay, FreeMode, Pagination]}
+              className="mySwiper"
+              breakpoints={{
+                400: {
+                  slidesPerView: 3,
+                },
+                768: {
+                  slidesPerView: 5,
+                },
+              }}
+            >
+              <SwiperSlide>
+                <img src={Slide3} alt="HADAT Cosmetics" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Slide2} alt="Dr.Sorbie" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Slide5} alt="K18 BIOMIMETIC HAIRSCIENCE" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Slide11} alt="Tangle Teezer" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Slide6} alt="ALFAPARF MILANO" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Slide4} alt="Provida Organic" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Slide7} alt="ZOOM Cosmetics" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Slide8} alt="LIMBA Cosmetics" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Slide9} alt="OLLIN Proffesional" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Slide10} alt="Fanola" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Slide1} alt="ikko" />
+              </SwiperSlide>
+            </Swiper>
+          </Col>
         </Row>
-        </Container>
-    )
+      </Container>
+    );
 }
 
 export {SwiperComponent};

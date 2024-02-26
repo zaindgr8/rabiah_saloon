@@ -41,12 +41,12 @@ const Layout = () =>{
               />
             </Col>
             <Col className="Top-Header-Content col-5 d-flex justify-content-end align-items-center">
-              <CustomLink to="/shop" onClick={() => handleClick()}>
+              {/* <CustomLink to="/shop" onClick={() => handleClick()}>
                 GOODS
-              </CustomLink>
-              <CustomLink to="/posts" onClick={() => handleClick()}>
+              </CustomLink> */}
+              {/* <CustomLink to="/posts" onClick={() => handleClick()}>
                 NEWS
-              </CustomLink>
+              </CustomLink> */}
               <CustomLink to="/about" onClick={() => handleClick()}>
                 ABOUT US
               </CustomLink>
@@ -112,22 +112,22 @@ const Layout = () =>{
                   />
                   ABOUT US
                 </CustomLink>
-                <CustomLink to="/posts" onClick={() => handleClick()}>
+                {/* <CustomLink to="/posts" onClick={() => handleClick()}>
                   <InstagramLogo
                     size={32}
                     color={"white"}
                     style={{ marginTop: "-4px" }}
                   />{" "}
                   NEWS
-                </CustomLink>
-                <CustomLink to="/shop" onClick={() => handleClick()}>
+                </CustomLink> */}
+                {/* <CustomLink to="/shop" onClick={() => handleClick()}>
                   <ShoppingBag
                     size={32}
                     color={"white"}
                     style={{ marginTop: "-4px" }}
                   />{" "}
                   GOODS
-                </CustomLink>
+                </CustomLink> */}
               </Nav>
             </Navbar.Collapse>
           </Container>

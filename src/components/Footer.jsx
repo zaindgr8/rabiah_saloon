@@ -35,11 +35,11 @@ const Footer = () =>{
                 </li>
               </ul>
             </Col>
-            <Col className="Footer-Head col-6 col-md-3">
-              <h4>CONTACTS</h4>
-              <p>Our address:</p>
+            <Col className="text-white col-6 col-md-3">
+              <h4>CONTACT US</h4>
+     
               <p>Dubai, United Arab Emirates</p>
-              <p>Our phone:</p>
+    
               <p>+971 111 222 333</p>
             </Col>
 

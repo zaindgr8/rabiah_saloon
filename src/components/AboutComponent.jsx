@@ -9,8 +9,7 @@ const AboutComponent = () => {
           <img className="About-SVG align-self-center" src={logo} alt="" />
         </Col>
         <Col
-          className="col-10 col-sm-11 col-lg-6 d-flex align-items-center justify-content-center"
-          style={{ textAlign: "justify" }}
+          className="col-10 col-sm-11 col-lg-6 d-flex item-center text-center"
         >
           <p>
             Welcome to RABIA SALOON- your premier destination for luxury hair

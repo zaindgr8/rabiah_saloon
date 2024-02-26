@@ -13,22 +13,15 @@ import { AboutComponent } from '../components/AboutComponent';
 import { useAuth } from "../hook/useAuth";
 import { SwiperComponent } from '../components/SwiperComponent';
 import { SwiperInstagram } from '../components/SwiperInstagram';
+import {title} from "../data/packages"
+import Courses from './Courses';
+
 
 const Homepage = () =>{
 
-    const { serviceData, employeeData, setMail, mail, sendMail} = useAuth();
+    const { serviceData, employeeData, setMail, mail, sendMail} = useAuth()
 
-    let getEmployee = (id) => {
-        return employeeData.filter( item => item.id == id).map( item => item.name)
-    };
-
-    let getTimeFromMins = (seconds) =>  {
-        let minutes = seconds / 60,
-            hours = minutes / 60;
-
-        return `${Math.floor(hours % 24)}ч ${Math.floor(minutes % 60)}м` 
-
-    };
+   
 
     // Send Mail
 
@@ -59,10 +52,10 @@ const Homepage = () =>{
       <>
         <Slider />
         <AboutComponent />
-        {/* <ServiceComponent />  */}
-        {/* {/* <Teampage /> */}
+        <ServiceComponent /> 
+        <Teampage />
 
-        <Container className="mb-20">
+        {/* <Container className="mb-20">
           <Row className="h-10">
             <Col className="Header text-center">
               <h2 className="decorated">
@@ -78,10 +71,8 @@ const Homepage = () =>{
                   <Accordion.Header>{training.title}</Accordion.Header>
                   <Accordion.Body>
                     <h2>{`${training.price_max} AED`}</h2>
-                    <p>{`Преподаватель мастер ${getEmployee(
-                      training.staff.map((item) => item.id)
-                    )}`}</p>
-                    <p>{`Продолжительность курса ${getTimeFromMins(
+                    <p>{`Teacher master ${getEmployee(training.staff.map((item) => item.id))}`}</p>
+                    <p>{`Course duration ${getTimeFromMins(
                       training.staff.map((item) => item.seance_length)
                     )}`}</p>
                   </Accordion.Body>
@@ -97,10 +88,12 @@ const Homepage = () =>{
               </Link>
             </Col>
           </Row>
-        </Container>
+        </Container> */}
 
-        {/* <SwiperComponent /> */}
-{/* 
+        <Courses/>
+
+        <SwiperComponent />
+
         <Container className="mb-20" fluid>
           <Row className="h-10">
             <Col className="Header text-center">
@@ -112,15 +105,19 @@ const Homepage = () =>{
           <Row>
             <Col>
               <iframe
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a06fd3012847bdc92446e6e74cd497e7570af1889b25c1726f509d298b583a9&amp;source=constructor"
-                style={{ width: "100%", height: "500px", frameborder: "0" }}
-                title="myFrame"
-              />
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.7893982018287!2d55.2716711150099!3d25.187130783885836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4343b9732361%3A0xe2e3617c51a0b34d!2sBusiness%20Bay%2C%20Dubai%2C%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1645369458927!5m2!1sen!2s"
+                width="100%"
+                height="500"
+                style={{ border: "0" }}
+                allowFullScreen=""
+                loading="lazy"
+                title="Dubai Business Bay Map"
+              ></iframe>
             </Col>
           </Row>
-        </Container> */}
+        </Container>
 
-        {/* <Container className="News mb-20" fluid>
+        <Container className="News mb-20" fluid>
           <Row className="h-10">
             <Col className="News-Header text-center">
               <h2 className="decorated-white">
@@ -142,9 +139,9 @@ const Homepage = () =>{
               </Button>{" "}
             </Col>
           </Row>
-        </Container> */}
+        </Container>
 
-        {/* <Container className="Contacts mb-20" fluid>
+        <Container className="Contacts mb-20" fluid>
           <Row className="h-10">
             <Col className="Header text-center">
               <h2 className="decorated">
@@ -170,7 +167,7 @@ const Homepage = () =>{
                   <Form.Control
                     name="email"
                     type="email"
-                    placeholder="Почта для связи с вами"
+                    placeholder="Email to contact you"
                     required
                     onChange={handleChange}
                   />
@@ -183,7 +180,7 @@ const Homepage = () =>{
                     name="tel"
                     type="tel"
                     mask="8(999) 999-99-99"
-                    placeholder="(029) 111-11-11"
+                    placeholder="(+971) 111-11-11"
                     required
                     onChange={handleChange}
                   />
@@ -196,7 +193,7 @@ const Homepage = () =>{
                   <Form.Control
                     name="text"
                     type="text"
-                    placeholder="Хочу уточнить вас о услуге..."
+                    placeholder="I would like to clarify with you about the service.."
                     required
                     onChange={handleChange}
                   />
@@ -219,7 +216,7 @@ const Homepage = () =>{
               </Form>
             </Col>
           </Row>
-        </Container> */}
+        </Container>
       </>
     );
 }
