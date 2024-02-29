@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+import avatar from "../assets/avatar.jpg"
 
 
 const Teampage = () => {
@@ -6,52 +7,11 @@ const Teampage = () => {
   const dummyEmployeeData = [
     {
       id: 1,
-      name: "Alice",
-      specialization: "Hair Stylist",
-      avatar_big: "avatar1.jpg",
+      name: "Rabia",
+      specialization: "Beauty Expert",
+      avatar_big: [avatar],
     },
-    {
-      id: 2,
-      name: "Bob",
-      specialization: "Makeup Artist",
-      avatar_big: "avatar2.jpg",
-    },
-    {
-      id: 3,
-      name: "Charlie",
-      specialization: "Nail Technician",
-      avatar_big: "avatar3.jpg",
-    },
-    {
-      id: 4,
-      name: "Diana",
-      specialization: "Skincare Specialist",
-      avatar_big: "avatar4.jpg",
-    },
-    {
-      id: 5,
-      name: "Emma",
-      specialization: "Massage Therapist",
-      avatar_big: "avatar5.jpg",
-    },
-    {
-      id: 6,
-      name: "Frank",
-      specialization: "Eyebrow Stylist",
-      avatar_big: "avatar6.jpg",
-    },
-    {
-      id: 7,
-      name: "Grace",
-      specialization: "Waxing Specialist",
-      avatar_big: "avatar7.jpg",
-    },
-    {
-      id: 8,
-      name: "Henry",
-      specialization: "Spa Manager",
-      avatar_big: "avatar8.jpg",
-    },
+
   ];
 
   return (

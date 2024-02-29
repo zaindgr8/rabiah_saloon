@@ -1,3 +1,7 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 @import "Footer.css";
 
 @font-face {
@@ -141,3 +145,12 @@ main a:hover {
   color: var(--color-active);
   cursor: default;
 }
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+

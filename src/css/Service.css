@@ -1,9 +1,37 @@
+.ig {
+    width: 45px;
+    height: 45px;
+}
+
+.Image {
+    border-radius: 20px;
+}
+.Price {
+  text-decoration: none; /* Remove underline */
+}
+
+.Gap {
+    padding-top: 0.85rem; /* Adjust as needed */
+    padding-bottom: 0.85rem; /* Adjust as needed */
+}
+
+.Dis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Div {
+    display: flex;
+    justify-content: center; /* Horizontally centers the items */
+    align-items: center; /* Vertically centers the items */
+}
+
 
 .Service {
     height: auto;
     margin-bottom: 30px;
 }
-
 
 .Service .nav-tabs .nav-link.active {
     color: #fafaff;

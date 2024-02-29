@@ -1,6 +1,7 @@
 import { Container, Row, Col} from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Pagination, Autoplay} from "swiper";
+import essie from "../assets/logos/essie.png"
 import "../css/Homepage.css";
 
 // Import Swiper styles
@@ -10,20 +11,16 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
 // Import images for Swiper
-import Slide1 from '../pages/img/swiper/Slide 1.jpg';
-import Slide2 from '../pages/img/swiper/Slide 2.jpg';
-import Slide3 from '../pages/img/swiper/Slide 3.png';
-import Slide4 from '../pages/img/swiper/Slide 4.png';
-import Slide5 from '../pages/img/swiper/Slide 5.jpeg';
-import Slide6 from '../pages/img/swiper/Slide 6.jpg';
-import Slide7 from '../pages/img/swiper/Slide 7.jpg';
-import Slide8 from '../pages/img/swiper/Slide 8.png';
-import Slide9 from '../pages/img/swiper/Slide 9.jpeg';
-import Slide10 from '../pages/img/swiper/Slide 10.jpg';
-import Slide11 from '../pages/img/swiper/Slide 11.jpg';
-
-
-
+import Slide1 from '../assets/logos/essie.png';
+import Slide2 from "../assets/logos/casmara.png";
+import Slide3 from "../assets/logos/gelish.png";
+import Slide4 from "../assets/logos/kerastase.png";
+import Slide5 from "../assets/logos/loreal.png";
+import Slide6 from "../assets/logos/lotus.png";
+import Slide7 from "../assets/logos/o3.png";
+import Slide8 from "../assets/logos/olaplex.png";
+import Slide9 from "../assets/logos/opi.svg";
+import Slide10 from "../assets/logos/vlcc1.avif";
 
 const SwiperComponent = () =>{
 
@@ -50,7 +47,7 @@ const SwiperComponent = () =>{
                 disableOnInteraction: false,
               }}
               modules={[Autoplay, FreeMode, Pagination]}
-              className="mySwiper"
+              className=""
               breakpoints={{
                 400: {
                   slidesPerView: 3,
@@ -61,28 +58,29 @@ const SwiperComponent = () =>{
               }}
             >
               <SwiperSlide>
-                <img src={Slide3} alt="HADAT Cosmetics" />
+                <img className="Size" src={Slide1} alt="Essie" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={Slide2} alt="Dr.Sorbie" />
+                <img className="Size" src={Slide2} alt="Dr.Sorbie" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={Slide5} alt="K18 BIOMIMETIC HAIRSCIENCE" />
+                <img
+                  className="Size"
+                  src={Slide3}
+                  alt="K18 BIOMIMETIC HAIRSCIENCE"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={Slide11} alt="Tangle Teezer" />
+                <img src={Slide5} alt="Tangle Teezer" />
               </SwiperSlide>
               <SwiperSlide>
                 <img src={Slide6} alt="ALFAPARF MILANO" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={Slide4} alt="Provida Organic" />
+                <img  src={Slide4} alt="Provida Organic" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={Slide7} alt="ZOOM Cosmetics" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={Slide8} alt="LIMBA Cosmetics" />
+                <img  src={Slide7} alt="ZOOM Cosmetics" />
               </SwiperSlide>
               <SwiperSlide>
                 <img src={Slide9} alt="OLLIN Proffesional" />

@@ -1,5 +1,12 @@
 import React from "react";
 import { Container, Row, Col, Tabs, Tab, Button } from "react-bootstrap";
+import rlogo from "../assets/rlogo4.png"
+import blowdry from "../assets/blowdry.jpg";
+import facial from "../assets/facial1.jpg";
+import mani from "../assets/mani.jpg";
+import pedi from "../assets/pedi.jpg";
+import moro from "../assets/morocon.jpg";
+
 
 const ServiceComponent = () => {
   // Define data directly within the component
@@ -14,10 +21,11 @@ const ServiceComponent = () => {
   const serviceData = [
     {
       id: 1,
-      title: "Fast, professional blow dry for any occasion.",
+      title: "Fast, professional blow dry for any occasion!",
       price_min: 50,
       category_id: 1,
       active: true,
+      imageUrl: blowdry,
     },
     {
       id: 2,
@@ -26,6 +34,7 @@ const ServiceComponent = () => {
       price_min: 60,
       category_id: 2,
       active: true,
+      imageUrl: facial,
     },
     {
       id: 3,
@@ -33,6 +42,7 @@ const ServiceComponent = () => {
       price_min: 70,
       category_id: 3,
       active: true,
+      imageUrl: mani,
     },
     {
       id: 4,
@@ -41,6 +51,7 @@ const ServiceComponent = () => {
       price_min: 80,
       category_id: 4,
       active: true,
+      imageUrl: pedi,
     },
     {
       id: 5,
@@ -49,19 +60,19 @@ const ServiceComponent = () => {
       price_min: 90,
       category_id: 5,
       active: true,
+      imageUrl: moro,
     },
-    // Add more services as needed
   ];
 
   return (
     <Container className="Service">
-      <Row className="h-10">
+      <Col className="h-10">
         <Col className="Header d-flex text-center justify-content-center">
           <h2 className="decorated">
             <span>SIGN UP FOR SERVICES</span>
           </h2>
         </Col>
-      </Row>
+      </Col>
       <Row className="h-80">
         <Tabs
           defaultActiveKey={categoryData[0].id}
@@ -83,14 +94,16 @@ const ServiceComponent = () => {
                     service.category_id === category.id && service.active
                 )
                 .map((service) => (
-                  <Row
-                    className="w-100 d-flex align-items-end"
-                    key={service.id}
-                  >
-                    <Col className="col-10 col-md-8">
+                  <Row className="w-100 Div" key={service.id}> 
+                      <img
+                        src={service.imageUrl}
+                        alt={service.title}
+                        className="w-50 Image Gap"
+                      />
+                    <Col className="col-10 col-md-8 Dis">
                       <p>{service.title}</p>
                     </Col>
-                    <Col className="col text-center">
+                    <Col className="col col-md-8 Dis">
                       <p>{`${service.price_min} AED`}</p>
                     </Col>
                   </Row>
@@ -101,11 +114,7 @@ const ServiceComponent = () => {
       </Row>
       <Row className="h-10">
         <Col className="text-center mt-2 mb-4">
-          <Button
-            size="lg"
-            variant="primary"
-            href="/"
-          >
+          <Button size="lg" variant="primary" href="/">
             SIGN UP FOR SERVICES
           </Button>{" "}
         </Col>
