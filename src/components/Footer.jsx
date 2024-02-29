@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "../css/index.css";
 import { CustomLink } from "./CustomLink";
 import { InstagramLogo } from "phosphor-react";
-import logo from "../pages/img/rlogo.png";
+import logo from "../pages/img/rlogo3.png";
 
 const Footer = () => {
   return (
