@@ -1,8 +1,8 @@
 import { Container, Row, Carousel} from 'react-bootstrap';
 import "../css/Homepage.css";
-import Slidervideo1 from '../pages/img/Slidervideo.mp4'
-import Slidervideo2 from '../pages/img/Slidervideo2.mp4'
-import Slidervideo3 from '../pages/img/Slidervideo3.mp4'
+import Slidervideo1 from '../assets/v3.mp4'
+import Slidervideo2 from "../assets/v2.mp4";
+import Slidervideo3 from "../assets/v1.mp4";
 
 const Slider = () =>{
 
