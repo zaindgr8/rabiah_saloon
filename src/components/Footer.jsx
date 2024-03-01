@@ -58,7 +58,7 @@ const Footer = () => {
         </Row>
         <Row>
           <Col className="text-center" style={{ color: "white" }}>
-            © rabia SALOON — 2024. All rights reserved
+            © RABIA SALOON — 2024. All rights reserved
           </Col>
         </Row>
       </Container>

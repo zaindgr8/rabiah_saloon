@@ -73,7 +73,7 @@ const Layout = () => {
             className="ms-4"
             style={{ fontWeight: "500", fontSize: "20px" }}
           >
-            rabia SALOON
+            RABIA SALOON
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav "

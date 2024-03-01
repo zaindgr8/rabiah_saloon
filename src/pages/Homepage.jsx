@@ -100,13 +100,13 @@ const Homepage = () => {
         <Row>
           <Col>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.7893982018287!2d55.2716711150099!3d25.187130783885836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4343b9732361%3A0xe2e3617c51a0b34d!2sBusiness%20Bay%2C%20Dubai%2C%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1645369458927!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.742259796472!2d55.31351861500998!3d25.23452698385142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4335b2f4d67f%3A0xf0f6cd861f2c21fb!2sOud%20Metha%2C%20Dubai%2C%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1645369458927!5m2!1sen!2s"
               width="100%"
               height="500"
               style={{ border: "0" }}
               allowFullScreen=""
               loading="lazy"
-              title="Dubai Business Bay Map"
+              title="Oud Metha, Dubai Map"
             ></iframe>
           </Col>
         </Row>
@@ -116,7 +116,7 @@ const Homepage = () => {
         <Row className="h-10">
           <Col className="News-Header text-center">
             <h2 className="decorated-white">
-              <span>rabia SALOON</span>
+              <span>RABIA SALOON</span>
             </h2>
           </Col>
         </Row>
