@@ -137,7 +137,10 @@ const Layout = () => {
       <main>
         <Outlet />
       </main>
-      <a href="tel:971111222" style={{ height: "100px", width: "100px" }}>
+      <a
+        href="https://wa.me/971522791298"
+        style={{ height: "100px", width: "100px" }}
+      >
         <Phone
           size={55}
           style={{
@@ -152,7 +155,7 @@ const Layout = () => {
         />
       </a>
       <a
-        href="https://www.instagram.com/zainulabideen0007/"
+        href="https://www.instagram.com/rabiasbeauty.salon?igsh=YXNiNTd3c3puanA2"
         target="_blank"
         style={{ height: "100px", width: "100px" }}
       >

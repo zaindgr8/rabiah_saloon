@@ -51,7 +51,7 @@ const Footer = () => {
                 href="https://www.instagram.com/zainulabideen0007/"
                 className="align-self-center"
               >
-                rabia_Saloon
+                Rabia_Saloon
               </a>
             </Col>
           </Col>
