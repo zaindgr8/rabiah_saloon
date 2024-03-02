@@ -1,3 +1,20 @@
+.no-hover:hover {
+  background-color: transparent !important;
+    border: none !important;
+  outline: none !important;
+}
+
+.dropdown-toggle {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+   color: black !important; 
+}
+
+.dropdown-item {
+  color: black !important;
+}
+
 .ig {
     width: 45px;
     height: 45px;
@@ -45,7 +62,7 @@
 
 .Service p{
     font-size: 1.2rem;
-    border-bottom: 1.5px solid;  
+
 }
 
 .Service-Tab ul,li{

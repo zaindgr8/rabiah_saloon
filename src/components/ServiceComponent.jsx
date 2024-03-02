@@ -1,68 +1,126 @@
-import React from "react";
-import { Container, Row, Col, Tabs, Tab, Button } from "react-bootstrap";
-import rlogo from "../assets/rlogo4.png"
+import React, { useState, useEffect } from "react";
+import {
+  Container,
+  Row,
+  Col,
+  Tabs,
+  Tab,
+  Button,
+  Dropdown,
+} from "react-bootstrap";
 import blowdry from "../assets/blowdry.jpg";
 import facial from "../assets/facial1.jpg";
 import mani from "../assets/mani.jpg";
 import pedi from "../assets/pedi.jpg";
 import moro from "../assets/morocon.jpg";
 
-
 const ServiceComponent = () => {
-  // Define data directly within the component
-  const categoryData = [
-    { id: 1, title: "Blow dry" },
-    { id: 2, title: "Facial" },
-    { id: 3, title: "Manicure" },
-    { id: 4, title: "Pedicure " },
-    { id: 5, title: "Moroccan bath" },
-  ];
+  const [selectedOptions, setSelectedOptions] = useState({});
 
-  const serviceData = [
+  const categoryData = [
     {
       id: 1,
-      title: "Fast, professional blow dry for any occasion!",
-      price_min: 50,
-      category_id: 1,
-      active: true,
-      imageUrl: blowdry,
+      title: "Hair",
+      subCategories: [
+        { id: 1, title: "Blow Dry (Short)", imageUrl: blowdry, price: 100 },
+        { id: 2, title: "Hair Cut", imageUrl: facial, price: 70 },
+        { id: 3, title: "Blow Dry with Curls", imageUrl: mani, price: 120 },
+        { id: 4, title: "Hair Spa", imageUrl: mani, price: 80 },
+        { id: 5, title: "Root Touchup", imageUrl: mani, price: 100 },
+      ],
     },
     {
       id: 2,
-      title:
-        "Refresh and rejuvenate your skin with our personalized facial treatment",
-      price_min: 60,
-      category_id: 2,
-      active: true,
-      imageUrl: facial,
+      title: "Threading",
+      subCategories: [
+        { id: 1, title: "Eyebrow/ Upper lips", imageUrl: facial, price: 20 },
+        { id: 2, title: "Full Face Threading", imageUrl: facial, price: 70 },
+        { id: 3, title: "Eyebrow Tint", imageUrl: facial, price: 50 },
+        {
+          id: 3,
+          title: "Chin/ Forehead/ Sidelocks",
+          imageUrl: facial,
+          price: 15,
+        },
+      ],
     },
     {
       id: 3,
-      title: "Indulge in a manicure for perfectly polished hands.",
-      price_min: 70,
-      category_id: 3,
-      active: true,
-      imageUrl: mani,
+      title: "Skin",
+      subCategories: [
+        { id: 1, title: "Face Bleach", imageUrl: mani, price: 40 },
+        { id: 2, title: "Deep Cleansing", imageUrl: mani, price: 100 },
+        { id: 3, title: "Herbal Facial", imageUrl: mani, price: 120 },
+        { id: 4, title: "Cold Facial", imageUrl: mani, price: 150 },
+      ],
     },
     {
       id: 4,
-      title:
-        "Treat your feet to our pedicure service for soft, refreshed relaxation.",
-      price_min: 80,
-      category_id: 4,
-      active: true,
-      imageUrl: pedi,
+      title: "Waxing",
+      subCategories: [
+        { id: 1, title: "Full Arms/ leg", imageUrl: pedi, price: 70 },
+        { id: 2, title: "Half Arms/ leg", imageUrl: pedi, price: 50 },
+        { id: 3, title: "Under Arms", imageUrl: pedi, price: 25 },
+        { id: 4, title: "Bikini", imageUrl: pedi, price: 80 },
+        { id: 5, title: "Back/ Stomach", imageUrl: pedi, price: 30 },
+        { id: 6, title: "Full Body Wax", imageUrl: pedi, price: 200 },
+        { id: 7, title: "Face Wax", imageUrl: pedi, price: 90 },
+        {
+          id: 3,
+          title: "Upper Lips/ Chin/ Forehead",
+          imageUrl: pedi,
+          price: 20,
+        },
+      ],
     },
     {
       id: 5,
-      title:
-        "Experience luxury with our Moroccan bath, blending traditional techniques for radiant skin.",
-      price_min: 90,
-      category_id: 5,
-      active: true,
-      imageUrl: moro,
+      title: "Massage & Spa",
+      subCategories: [
+        { id: 1, title: "Foot Massage", imageUrl: moro, price: 65 },
+        { id: 2, title: "Neck & Shoulder Massage", imageUrl: moro, price: 75 },
+        { id: 3, title: "Back Massage", imageUrl: moro, price: 95 },
+        { id: 4, title: "Head Massage", imageUrl: moro, price: 85 },
+        { id: 5, title: "Full Body Massage", imageUrl: moro, price: 300 },
+        { id: 6, title: "Couple Massage", imageUrl: moro, price: 600 },
+        { id: 7, title: "Moroccan Bath", imageUrl: moro, price: 100 },
+      ],
     },
   ];
+
+  useEffect(() => {
+    const initialSelectedOptions = {};
+    categoryData.forEach((category) => {
+      initialSelectedOptions[category.id] = category.subCategories[0];
+    });
+    setSelectedOptions(initialSelectedOptions);
+  }, []);
+
+  const handleOptionSelect = (categoryId, option) => {
+    setSelectedOptions({
+      ...selectedOptions,
+      [categoryId]: option,
+    });
+  };
+
+  const renderDropdown = (category) => (
+    <Dropdown>
+      <Dropdown.Toggle id={`dropdown-${category.id}`} className="no-hover">
+        {category.title}
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        {category.subCategories.map((subCategory, index) => (
+          <Dropdown.Item
+            key={index}
+            onClick={() => handleOptionSelect(category.id, subCategory)}
+          >
+            {subCategory.title}
+          </Dropdown.Item>
+        ))}
+      </Dropdown.Menu>
+    </Dropdown>
+  );
 
   return (
     <Container className="Service">
@@ -85,29 +143,24 @@ const ServiceComponent = () => {
               className="Service-Tab"
               key={category.id}
               eventKey={category.id}
-              title={category.title}
+              title={renderDropdown(category)}
               style={{ fontSize: "5.9vw" }}
             >
-              {serviceData
-                .filter(
-                  (service) =>
-                    service.category_id === category.id && service.active
-                )
-                .map((service) => (
-                  <Row className="w-100 Div" key={service.id}> 
-                      <img
-                        src={service.imageUrl}
-                        alt={service.title}
-                        className="w-50 Image Gap"
-                      />
-                    <Col className="col-10 col-md-8 Dis">
-                      <p>{service.title}</p>
-                    </Col>
-                    <Col className="col col-md-8 Dis">
-                      <p>{`${service.price_min} AED`}</p>
-                    </Col>
-                  </Row>
-                ))}
+              {selectedOptions[category.id] && (
+                <Row className="w-100 Div">
+                  <img
+                    src={selectedOptions[category.id].imageUrl}
+                    alt={selectedOptions[category.id].title}
+                    className="w-50 Image Gap"
+                  />
+                  <Col className="col-10 col-md-8 Dis">
+                    <p>{selectedOptions[category.id].title}</p>
+                  </Col>
+                  <Col className="col col-md-8 Dis">
+                    <p>{`${selectedOptions[category.id].price} AED`}</p>
+                  </Col>
+                </Row>
+              )}
             </Tab>
           ))}
         </Tabs>

@@ -6,7 +6,6 @@ import { Container, Row, Col, Navbar, Nav } from "react-bootstrap";
 import {
   House,
   Info,
-  ShoppingBag,
   UsersThree,
   InstagramLogo,
   Phone,

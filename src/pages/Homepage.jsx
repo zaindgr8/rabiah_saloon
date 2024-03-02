@@ -126,7 +126,7 @@ const Homepage = () => {
         <Row className="justify-content-center text-center">
           <Col className="mb-5 pt-4">
             <Button
-              href="https://www.instagram.com/bar_studio.mogilev/?hl=ru"
+              href="https://www.instagram.com/rabiasbeauty.salon?igsh=YXNiNTd3c3puanA2"
               size="lg"
               variant="primary"
             >

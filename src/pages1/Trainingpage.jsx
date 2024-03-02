@@ -32,10 +32,12 @@ const Trainingpage = () =>{
     
     const handleSubmit = (event) =>{
         event.preventDefault();
-        mail['subject'] = 'Обратная связь. Вопрос по курсам'
+        mail["subject"] = "Feedback. Question about courses";
 
         sendMail();
-        setAnswer('Ваше сообщение успешно отправлено! В скором времени с вами свяжутся.');
+        setAnswer(
+          "Your message has been sent successfully! You will be contacted shortly."
+        );
 
         setTimeout(() => {
             setAnswer('');
@@ -61,13 +63,12 @@ const Trainingpage = () =>{
                 <Accordion.Item key={training.id} eventKey={training.id}>
                   <Accordion.Header>{training.title}</Accordion.Header>
                   <Accordion.Body>
-                    <h2>{`${training.price_max} BYN`}</h2>
-                    <p>{`Преподаватель мастер ${getEmployee(
+                    <h2>{`${training.price_max} AED`}</h2>
+                    <p>{`Teacher master ${getEmployee(
                       training.staff.map((item) => item.id)
                     )}`}</p>
-                    <p>{`Продолжительность курса ${getTimeFromMins(
-                      training.staff.map((item) => item.seance_length)
-                    )}`}</p>
+                    <p>{`Course duration
+ ${getTimeFromMins(training.staff.map((item) => item.seance_length))}`}</p>
                   </Accordion.Body>
                 </Accordion.Item>
               ))}
@@ -77,7 +78,7 @@ const Trainingpage = () =>{
           <Row className="h-10">
             <Col className="Training-Reg-Header text-center">
               {" "}
-              Записаться на курсы{" "}
+              Sign up for courses{" "}
             </Col>
           </Row>
           <Row
@@ -89,14 +90,14 @@ const Trainingpage = () =>{
               style={{ background: "white", borderRadius: "8px 0px 0px 8px" }}
             >
               <Col className="Contacts-header text-center col-12">
-                НАШИ КОНТАКТЫ
+                ЫOUR CONTACTS
               </Col>
               <Col className="Contacts-header col-12 h-100 d-flex flex-column mt-3">
-                <p>Мы находимся по адресу:</p>
-                <p>г. Могилев, ул. Первомайская, 2</p>
-                <p>Наш телефон для связи:</p>
+                <p>We are located </p>
+                <p>Oudh Mehta, Dubai, UAE</p>
+                <p>Our contact number:</p>
                 <p>+971 52 279 1298</p>
-                <p>Мы с вами обязательно свяжемся!</p>
+                <p>We will definitely contact you!</p>
               </Col>
             </Col>
             <Col
@@ -109,7 +110,7 @@ const Trainingpage = () =>{
                   <Form.Control
                     name="email"
                     type="email"
-                    placeholder="Почта для связи с вами"
+                    placeholder="Email to contact you"
                     required
                     onChange={handleChange}
                   />
@@ -135,7 +136,7 @@ const Trainingpage = () =>{
                   <Form.Control
                     name="text"
                     type="text"
-                    placeholder="Хочу уточнить информацию о курсах!"
+                    placeholder="I would like to get more information about the courses!"
                     required
                     onChange={handleChange}
                   />
