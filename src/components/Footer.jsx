@@ -27,12 +27,6 @@ const Footer = () => {
               <li>
                 <CustomLink to="/about">About Us</CustomLink>
               </li>
-              <li>
-                <CustomLink to="/shop">Goods</CustomLink>
-              </li>
-              <li>
-                <CustomLink to="/posts">News</CustomLink>
-              </li>
             </ul>
           </Col>
           <Col className="text-white col-6 col-md-3">
