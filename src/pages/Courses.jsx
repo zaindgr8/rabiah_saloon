@@ -7,7 +7,7 @@ const Courses = () => {
   const coursesData = [
     {
       id: 1,
-      title: "Complete Wax Package",
+      title: "Complete Wax Package (Choose any 3)",
       details:
         "Full hand wax, full leg wax, under arm wax, classic manicure, classic pedicure.",
       duration:
@@ -16,14 +16,31 @@ const Courses = () => {
     },
     {
       id: 2,
-      title: "Menicure/ Pedicure",
+      title: "Menicure/ Pedicure (Choose any 3)",
       details:
         "Hair Spa, Gel Manicure, Gel Pedicure, Bikini Wax, 20 min foot massage",
       duration:
         "Indulge in pure bliss with our Deluxe Spa and Nail Care Package.",
       price: "149 AED",
     },
-    // Add more courses as needed
+    {
+      id: 3,
+      title: "Massage & Spa (Choose any 3)",
+      details:
+        "Full Body Massage, Hair Spa, Blow Dry with wash, Half hand with arms wax.",
+      duration:
+        "Unwind and pamper yourself with our Signature Spa and Beauty Package.",
+      price: "199 AED",
+    },
+    {
+      id: 4,
+      title: "Facial & Wax (Choose any 3)",
+      details:
+        "Herbal Facial, Full Hand Wax, Full Leg Wax, Hair Spa with Blowdry, 80 Min Foot Massage.",
+      duration:
+        "Experience pure indulgence with our Luxe Spa and Beauty Retreat.",
+      price: "229 AED",
+    },
   ];
 
   return (

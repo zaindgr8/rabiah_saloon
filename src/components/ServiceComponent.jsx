@@ -109,14 +109,13 @@ const ServiceComponent = () => {
       <Dropdown.Toggle id={`dropdown-${category.id}`} className="no-hover">
         {category.title}
       </Dropdown.Toggle>
-
       <Dropdown.Menu>
         {category.subCategories.map((subCategory, index) => (
           <Dropdown.Item
             key={index}
             onClick={() => handleOptionSelect(category.id, subCategory)}
           >
-            {subCategory.title}
+            <p>{subCategory.title}</p>
           </Dropdown.Item>
         ))}
       </Dropdown.Menu>
@@ -145,7 +144,7 @@ const ServiceComponent = () => {
               key={category.id}
               eventKey={category.id}
               title={renderDropdown(category)}
-              style={{ fontSize: "5.9vw" }}
+              style={{ fontSize: ".9vw" }}
             >
               {selectedOptions[category.id] && (
                 <Row className="w-100 Div">
@@ -170,7 +169,7 @@ const ServiceComponent = () => {
         <Col className="text-center mt-2 mb-4">
           <Button size="lg" variant="primary" href="/">
             SIGN UP FOR SERVICES
-          </Button>{" "}
+          </Button>
         </Col>
       </Row>
     </Container>
