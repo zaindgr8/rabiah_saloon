@@ -8,11 +8,12 @@ import {
   Button,
   Dropdown,
 } from "react-bootstrap";
-import blowdry from "../assets/blowdry.jpg";
-import facial from "../assets/facial1.jpg";
-import mani from "../assets/mani.jpg";
-import pedi from "../assets/pedi.jpg";
+import msg from "../assets/msg.jpg";
 import moro from "../assets/morocon.jpg";
+import hair from "../assets/hr.jpg";
+import thread from "../assets/thrdng.jpg";
+import skn from "../assets/skn.jpg";
+import wxng from "../assets/wxng.jpg";
 
 const ServiceComponent = () => {
   const [selectedOptions, setSelectedOptions] = useState({});
@@ -22,24 +23,24 @@ const ServiceComponent = () => {
       id: 1,
       title: "Hair",
       subCategories: [
-        { id: 1, title: "Blow Dry (Short)", imageUrl: blowdry, price: 100 },
-        { id: 2, title: "Hair Cut", imageUrl: facial, price: 70 },
-        { id: 3, title: "Blow Dry with Curls", imageUrl: mani, price: 120 },
-        { id: 4, title: "Hair Spa", imageUrl: mani, price: 80 },
-        { id: 5, title: "Root Touchup", imageUrl: mani, price: 100 },
+        { id: 1, title: "Blow Dry (Short)", imageUrl: hair, price: 100 },
+        { id: 2, title: "Hair Cut", imageUrl: hair, price: 70 },
+        { id: 3, title: "Blow Dry with Curls", imageUrl: hair, price: 120 },
+        { id: 4, title: "Hair Spa", imageUrl: hair, price: 80 },
+        { id: 5, title: "Root Touchup", imageUrl: hair, price: 100 },
       ],
     },
     {
       id: 2,
       title: "Threading",
       subCategories: [
-        { id: 1, title: "Eyebrow/ Upper lips", imageUrl: facial, price: 20 },
-        { id: 2, title: "Full Face Threading", imageUrl: facial, price: 70 },
-        { id: 3, title: "Eyebrow Tint", imageUrl: facial, price: 50 },
+        { id: 1, title: "Eyebrow/ Upper lips", imageUrl: thread, price: 20 },
+        { id: 2, title: "Full Face Threading", imageUrl: thread, price: 70 },
+        { id: 3, title: "Eyebrow Tint", imageUrl: thread, price: 50 },
         {
           id: 3,
           title: "Chin/ Forehead/ Sidelocks",
-          imageUrl: facial,
+          imageUrl: thread,
           price: 15,
         },
       ],
@@ -48,27 +49,27 @@ const ServiceComponent = () => {
       id: 3,
       title: "Skin",
       subCategories: [
-        { id: 1, title: "Face Bleach", imageUrl: mani, price: 40 },
-        { id: 2, title: "Deep Cleansing", imageUrl: mani, price: 100 },
-        { id: 3, title: "Herbal Facial", imageUrl: mani, price: 120 },
-        { id: 4, title: "Cold Facial", imageUrl: mani, price: 150 },
+        { id: 1, title: "Face Bleach", imageUrl: skn, price: 40 },
+        { id: 2, title: "Deep Cleansing", imageUrl: skn, price: 100 },
+        { id: 3, title: "Herbal Facial", imageUrl: skn, price: 120 },
+        { id: 4, title: "Cold Facial", imageUrl: skn, price: 150 },
       ],
     },
     {
       id: 4,
       title: "Waxing",
       subCategories: [
-        { id: 1, title: "Full Arms/ leg", imageUrl: pedi, price: 70 },
-        { id: 2, title: "Half Arms/ leg", imageUrl: pedi, price: 50 },
-        { id: 3, title: "Under Arms", imageUrl: pedi, price: 25 },
-        { id: 4, title: "Bikini", imageUrl: pedi, price: 80 },
-        { id: 5, title: "Back/ Stomach", imageUrl: pedi, price: 30 },
-        { id: 6, title: "Full Body Wax", imageUrl: pedi, price: 200 },
-        { id: 7, title: "Face Wax", imageUrl: pedi, price: 90 },
+        { id: 1, title: "Full Arms/ leg", imageUrl: wxng, price: 70 },
+        { id: 2, title: "Half Arms/ leg", imageUrl: wxng, price: 50 },
+        { id: 3, title: "Under Arms", imageUrl: wxng, price: 25 },
+        { id: 4, title: "Bikini", imageUrl: wxng, price: 80 },
+        { id: 5, title: "Back/ Stomach", imageUrl: wxng, price: 30 },
+        { id: 6, title: "Full Body Wax", imageUrl: wxng, price: 200 },
+        { id: 7, title: "Face Wax", imageUrl: wxng, price: 90 },
         {
           id: 3,
           title: "Upper Lips/ Chin/ Forehead",
-          imageUrl: pedi,
+          imageUrl: wxng,
           price: 20,
         },
       ],
@@ -77,13 +78,13 @@ const ServiceComponent = () => {
       id: 5,
       title: "Massage & Spa",
       subCategories: [
-        { id: 1, title: "Foot Massage", imageUrl: moro, price: 65 },
-        { id: 2, title: "Neck & Shoulder Massage", imageUrl: moro, price: 75 },
-        { id: 3, title: "Back Massage", imageUrl: moro, price: 95 },
-        { id: 4, title: "Head Massage", imageUrl: moro, price: 85 },
-        { id: 5, title: "Full Body Massage", imageUrl: moro, price: 300 },
-        { id: 6, title: "Couple Massage", imageUrl: moro, price: 600 },
-        { id: 7, title: "Moroccan Bath", imageUrl: moro, price: 100 },
+        { id: 1, title: "Foot Massage", imageUrl: msg, price: 65 },
+        { id: 2, title: "Neck & Shoulder Massage", imageUrl: msg, price: 75 },
+        { id: 3, title: "Back Massage", imageUrl: msg, price: 95 },
+        { id: 4, title: "Head Massage", imageUrl: msg, price: 85 },
+        { id: 5, title: "Full Body Massage", imageUrl: msg, price: 300 },
+        { id: 6, title: "Couple Massage", imageUrl: msg, price: 600 },
+        { id: 7, title: "Moroccan Bath", imageUrl: msg, price: 100 },
       ],
     },
   ];
@@ -148,17 +149,17 @@ const ServiceComponent = () => {
             >
               {selectedOptions[category.id] && (
                 <Row className="w-100 Div">
-                  <img
-                    src={selectedOptions[category.id].imageUrl}
-                    alt={selectedOptions[category.id].title}
-                    className="w-50 Image Gap"
-                  />
                   <Col className="col-10 col-md-8 Dis">
                     <p>{selectedOptions[category.id].title}</p>
                   </Col>
                   <Col className="col col-md-8 Dis">
                     <p>{`${selectedOptions[category.id].price} AED`}</p>
                   </Col>
+                  <img
+                    src={selectedOptions[category.id].imageUrl}
+                    alt={selectedOptions[category.id].title}
+                    className="w-50 Image Gap"
+                  />
                 </Row>
               )}
             </Tab>

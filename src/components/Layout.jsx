@@ -29,9 +29,9 @@ const Layout = () => {
             <CustomLink to="/service" onClick={() => handleClick()}>
               SERVICES
             </CustomLink>
-            <CustomLink to="/team" onClick={() => handleClick()}>
+            {/* <CustomLink to="/team" onClick={() => handleClick()}>
               TEAM
-            </CustomLink>
+            </CustomLink> */}
           </Col>
           <Col className="Top-Header-Content col-2">
             <img
@@ -72,7 +72,7 @@ const Layout = () => {
             className="ms-4"
             style={{ fontWeight: "500", fontSize: "20px" }}
           >
-            RABIA SALOON
+            RABIA's SALOON
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav "

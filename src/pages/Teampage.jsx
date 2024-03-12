@@ -7,7 +7,7 @@ const Teampage = () => {
   const dummyEmployeeData = [
     {
       id: 1,
-      name: "Rabia",
+      name: "Rabia's",
       specialization: "Beauty Expert",
       avatar_big: [avatar],
     },
@@ -31,13 +31,13 @@ const Teampage = () => {
             sm={{ height: "300px" }}
             key={data.id}
           >
-            <div className="Team-container">
+            {/* <div className="Team-container">
               <img src={data.avatar_big} alt={data.name} />
               <div className="Team-person">
                 <h4 style={{ marginTop: "10px" }}>{data.name}</h4>
                 <p>{data.specialization}</p>
               </div>
-            </div>
+            </div> */}
           </Col>
         ))}
       </Row>

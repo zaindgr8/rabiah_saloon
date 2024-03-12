@@ -7,17 +7,21 @@ const Courses = () => {
   const coursesData = [
     {
       id: 1,
-      title: "Facial & Massage Combo",
-      details: "Personalized facial rejuvenation.",
-      duration: "Relaxing massage for stress relief.",
-      price: "1200 AED",
+      title: "Complete Wax Package",
+      details:
+        "Full hand wax, full leg wax, under arm wax, classic manicure, classic pedicure.",
+      duration:
+        "Total grooming perfection with our Complete Wax and Nail Care Package.",
+      price: "99 AED",
     },
     {
       id: 2,
-      title: "Manicure & Pedicure",
-      details: "Complete hand and foot care.",
-      duration: "Customizable nail styling options.",
-      price: "950 AED",
+      title: "Menicure/ Pedicure",
+      details:
+        "Hair Spa, Gel Manicure, Gel Pedicure, Bikini Wax, 20 min foot massage",
+      duration:
+        "Indulge in pure bliss with our Deluxe Spa and Nail Care Package.",
+      price: "149 AED",
     },
     // Add more courses as needed
   ];
