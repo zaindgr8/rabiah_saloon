@@ -45,14 +45,14 @@ const Footer = () => {
                 href="https://www.instagram.com/zainulabideen0007/"
                 className="align-self-center"
               >
-                Rabia_Saloon
+                Rabia_Salon
               </a>
             </Col>
           </Col>
         </Row>
         <Row>
           <Col className="text-center" style={{ color: "white" }}>
-            © RABIA's SALOON — 2024. All rights reserved
+            © RABIA's Salon — 2024. All rights reserved
           </Col>
         </Row>
       </Container>

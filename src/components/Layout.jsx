@@ -72,7 +72,7 @@ const Layout = () => {
             className="ms-4"
             style={{ fontWeight: "500", fontSize: "20px" }}
           >
-            RABIA's SALOON
+            RABIA's Salon
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav "
@@ -154,7 +154,7 @@ const Layout = () => {
         />
       </a>
       <a
-        href="https://www.instagram.com/rabiasbeauty.salon?igsh=YXNiNTd3c3puanA2"
+        href="https://www.instagram.com/rabiasbeauty.Salon?igsh=YXNiNTd3c3puanA2"
         target="_blank"
         style={{ height: "100px", width: "100px" }}
       >

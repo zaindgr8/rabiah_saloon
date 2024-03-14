@@ -10,7 +10,7 @@ const AboutComponent = () => {
         </Col>
         <Col className="col-10 col-sm-11 col-lg-6 d-flex item-center text-center">
           <p>
-            Welcome to RABIA's SALOON- your premier destination for luxury hair
+            Welcome to RABIA's Salon- your premier destination for luxury hair
             and beauty services in Dubai. Our expert team of stylists and color
             specialists is dedicated to enhancing your natural beauty with
             precision and flair. From glamorous hair transformations to

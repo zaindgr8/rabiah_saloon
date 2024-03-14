@@ -116,7 +116,7 @@ const Homepage = () => {
         <Row className="h-10">
           <Col className="News-Header text-center">
             <h2 className="decorated-white">
-              <span>RABIA's SALOON</span>
+              <span>RABIA's Salon</span>
             </h2>
           </Col>
         </Row>
@@ -126,7 +126,7 @@ const Homepage = () => {
         <Row className="justify-content-center text-center">
           <Col className="mb-5 pt-4">
             <Button
-              href="https://www.instagram.com/rabiasbeauty.salon?igsh=YXNiNTd3c3puanA2"
+              href="https://www.instagram.com/rabiasbeauty.Salon?igsh=YXNiNTd3c3puanA2"
               size="lg"
               variant="primary"
             >

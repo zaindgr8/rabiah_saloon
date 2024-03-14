@@ -123,7 +123,7 @@ const Homepage = () => {
         <Row className="h-10">
           <Col className="News-Header text-center">
             <h2 className="decorated-white">
-              <span>RABIA's SALOON</span>
+              <span>RABIA's Salon</span>
             </h2>
           </Col>
         </Row>
