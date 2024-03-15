@@ -48,7 +48,7 @@ const Homepage = () => {
       <Slider />
       <AboutComponent />
       <ServiceComponent />
-      <Teampage />
+      {/* <Teampage /> */}
 
       {/* <Container className="mb-20">
           <Row className="h-10">

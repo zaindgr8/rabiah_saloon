@@ -31,10 +31,9 @@ const Footer = () => {
           </Col>
           <Col className="text-white col-6 col-md-3">
             <h4>CONTACT US</h4>
-
             <p>Dubai, United Arab Emirates</p>
-
             <p>+971 52 279 1298</p>
+            <p>rabiasbeauty405@gmail.com</p>
           </Col>
 
           <Col className="Footer-Subscribe col-6 col-md-3">
@@ -42,7 +41,7 @@ const Footer = () => {
             <Col className="d-flex text-align-center justify-content-center justify-content-md-start align-content-center">
               <InstagramLogo size={32} color={"white"}></InstagramLogo>
               <a
-                href="https://www.instagram.com/zainulabideen0007/"
+                href="https://www.instagram.com/rabiasbeauty.salon/"
                 className="align-self-center"
               >
                 Rabia_Salon
